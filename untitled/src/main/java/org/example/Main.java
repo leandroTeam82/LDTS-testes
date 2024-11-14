@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory();
-        TerminalSize terminalSize = new TerminalSize(80, 24);
+        TerminalSize terminalSize = new TerminalSize(400, 300);
         Rectangle defaultBounds = new Rectangle(1280, 720);
 
         TerminalCreatorC terminalCreatorC = new TerminalCreatorC(terminalFactory, terminalSize, defaultBounds);
@@ -24,7 +24,7 @@ public class Main {
 
             terminal = new Terminal(terminalCreatorC, "My Lanterna Game");
 
-            ResizableTerminal.Resolution resolution = ResizableTerminal.Resolution.WQHD;
+            ResizableTerminal.Resolution resolution = ResizableTerminal.Resolution.WXGA;
             terminal.setResolution(resolution);
 
             Sprite sprite = new Sprite("sprites/sprite1.png");
